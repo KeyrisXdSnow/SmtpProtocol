@@ -80,6 +80,11 @@ namespace SmtpProtocol.Properties.server
 
                 _smtpSender.Send(message);
                 Console.WriteLine(sendMessageSuccessAnswer);
+                
+                //Console.WriteLine(String.Join(" ","Mail form:",_sender.GetEmail()));
+                //Console.WriteLine(String.Join(" ","Port",_port," Sender ok"));
+                //Console.WriteLine(String.Join(" ","RCTP to:",receiver.GetEmail()));
+                //Console.WriteLine(String.Join(" ",_port,receiver.GetEmail(),"Recepient OK"));
             }
             catch (Exception e)
             {
